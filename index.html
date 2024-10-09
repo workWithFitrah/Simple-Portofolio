@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="main-navbar">
+            <div class="nav-logo">
+                <p style="font-size: 20px; color:#FAD500; font-weight: 700; padding-left: 10px;">Fitrah's<br> Portofolio</p>
+            </div>
+            <nav class="navbar" id="topnav">
+                <ul>
+                    <li><a href="#photograph">Photograph</a></li>
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#about">About</a></li>                
+                    <a onclick="navbarFunct()" class="icon"><img src="assets/menu-burger_48.png" class="icon-set"></a>
+                </ul>
+                
+            </nav>
+        </div>
+        <div id="menu-responsive" class="card-menu-responsive" style="display: none; position: fixed; width: 100%;">
+            <ul>
+                <li><a onclick="photographfunct()">Photograph</a></li>
+                <li><a onclick="designfunct()">Design</a></li>
+                <li><a onclick="aboutfunct()">About</a></li>  
+            </ul>
+        </div>
+        
+    </header>
+    
+    
+    <main>
+        <article style="padding: 40px; padding-top: 90px;">
+            <div class="row" style="align-items: flex-end;">
+                <div class="column">
+                    <p style="font-size: 70px; color:#FAD500; font-weight: 700; text-align: right; margin: 0;">Hello<br> fellas!</p>
+                </div>
+                <div class="column">
+                    <p>Welcome to my journey, hope you enjoy</p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="row" id="photograph">
+                <div class="column">
+                    <img src="assets/kid.jpg" style="width: 100%" alt="Street pict">
+                    <img src="assets/walk.jpg" style="width: 100%" alt="Street pict">
+                </div>
+                <div class="column">
+                    <img src="assets/street.jpg" style="width: 100%" alt="Street pict">
+                    <img src="assets/street_potrait.jpg" style="width: 100%" alt="Street pict">
+                </div>
+                <div class="column">
+                    <img src="assets/mount.jpg" style="width: 100%" alt="Street pict">
+                    <img src="assets/mount2.jpg" style="width: 100%" alt="Street pict">
+                    <img src="assets/mount3.jpg" style="width: 100%" alt="Street pict">
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div id="design" class="content-design">
+                <div class="column-design">
+                    <div style="padding: 50pt;">
+                        <p style="font-size: 40px; color:#ffffff; font-weight: 700; text-align: left; margin: 0;">“How do we start taking pictures of people, and stop taking pictures of poses?”</p>
+                        <p style="font-size: 16px; color:#ffffff; padding-bottom: 20pt;">– Justin and Mary Marantz
+                        </p>
+                        <button class="button-design"><a href="https://www.dicoding.com/dashboard" target="_blank" style="color: #000000; text-decoration: none;">click here</a></button>
+                    </div>
+                </div>
+                <div class="column-design image">
+                    <img src="assets/park.jpg" style="width: 100%; object-fit: cover;" alt="Park pict">
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div style="text-align: center;">
+                <p style="font-size: 50px; color:#FAD500; font-weight: 700;">Project Design</p>
+            </div>
+            <div class="row" style="padding: 20pt 40pt; gap: 1.2rem;">
+                <div class="card">
+                    <!-- <h3>Card 1</h3> -->
+                    <img src="assets/logo1.jpg" class="responsive-img" alt="card 1">
+                    <p>This logo is designed for MSME businesses that offer tempeh chips. The logo uses basic colors such as yellow, brown, and white to create a lively and satisfying impression.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/logo2.jpg" class="responsive-img"  alt="card 2">
+                    <p>The logo for the "Japanese restaurant" features round red accents and Japanese writing, highlighting the product's identity.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/logo3.jpg" class="responsive-img"  alt="card 3">
+                    <p>The "ngileerr" logo adopts a relaxed concept to create a comfortable experience for customers.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/logo4.jpg" class="responsive-img"  alt="card 4">
+                    <p>This logo, designed for MSME businesses offering rolled omelette products, emphasizes a classic design hierarchy.</p>
+                </div>
+            </div>
+            <div class="row" style="padding: 0pt 40pt; gap: 1.2rem;">
+                <div class="card">
+                    <img src="assets/brosur1.jpg" class="responsive-img"  alt="card 5">
+                    <p>The brochure design incorporates futuristic accents, such as folds, to convey that the vocational school specializes in multimedia.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/brosur2.jpg" class="responsive-img"  alt="card 6">
+                    <p>The brochure showcases aviation service products, utilizing a minimalist yet luxurious design approach.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/brosur3.jpg" class="responsive-img"  alt="card 7">
+                    <p>The company profile cover design features green, white, and gray as the primary colors. The layout allocates 50% for the cover image and 50% for design space and text, ensuring clarity.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/brosur4.jpg" class="responsive-img"  alt="card 4">
+                    <p>The product designs presented in the company profile use a text font aligned with white space to enhance readability and structure for readers.</p>
+                </div>
+            </div>
+            
+        </article>
+        <article>
+            <div id="about" style="background-color: #D6B700; padding: 30pt;margin-top: 80px; color: #ffffff;">
+                <h1 style="text-align: center;">About <span style="color: #f5f6ba;">Me</span></h1>
+                <p style="padding: 30pt;">I'm a creative person. I like to find alternative solutions to existing problems and be open about all the best possible solutions. My creativity is very helpful in becoming a good leader because I can anticipate various problems and solve them with various solutions.</p>
+
+            </div>
+        </article>
+        
+        <!-- Burrom bar -->
+        <aside>
+            <div class="bottom-bar">
+                <ul>
+                    <li><a href="https://github.com/workWithFitrah" target="_blank"><img src="assets/github_48.png" class="icon-set"></a></li>
+                    <li><a href="https://www.instagram.com/fitrahaff/" target="_blank"><img src="assets/instagram_48.png" class="icon-set"></a></li>
+                    <li><a href="https://www.linkedin.com/in/muhammad-fitrah-alghiffari/" target="_blank"><img src="assets/linkedin_48.png" class="icon-set"></a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+
+        var navButton = document.getElementById("topnav");
+        var menuCard = document.getElementById("menu-responsive");
+        
+        function navbarFunct(){
+            if (navButton.className === "navbar"){
+                navButton.className += " responsive";
+                menuCard.style.display = 'block';
+            } else{
+                navButton.className === "navbar";
+                navButton.classList.remove("responsive");
+                menuCard.style.display = 'none';
+            }
+
+            console.log("tes");
+        }
+
+        function photographfunct(){
+            location.href = "#photograph";
+            navButton.classList.remove("responsive");
+            menuCard.style.display = 'none';
+        }
+
+        function designfunct(){
+            location.href = "#design";
+            navButton.classList.remove("responsive");
+            menuCard.style.display = 'none';
+        }
+
+        function aboutfunct(){
+            location.href = "#about";
+            navButton.classList.remove("responsive");
+            menuCard.style.display = 'none';
+        }
+ 
+    </script>
+</body>
+</html>

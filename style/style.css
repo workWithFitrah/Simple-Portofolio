@@ -1,0 +1,239 @@
+body{
+    font-family: Montserrat, Open Sans ;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+    z-index: 2;
+    /* box-shadow: 0px 6px 12px 5px #888888; */
+}
+
+
+.navbar ul{
+    display: flex;
+    gap: 2rem 1rem;
+    justify-content: center;
+}
+
+.navbar li{
+    list-style-type: none;
+}
+
+.navbar li a{
+    padding: 0.5rem 1.5rem;
+}
+
+.navbar li:hover a{
+    background-color: #FAD500;
+    color:#ffffff;
+    border-radius: 200px;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar .icon{
+    display: none;
+    padding: 5px;
+}
+
+.card-menu-responsive ul{
+    padding-top: 100px;
+    padding-left: 5px;
+    display: flex;
+    gap: 0.2rem 1rem;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.card-menu-responsive li{
+    list-style-type: none;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.card-menu-responsive a{
+    text-decoration: none;
+    padding: 0;
+    color: #000000;
+}
+
+.card-menu-responsive li:hover{
+    background-color: #f1f1f1;
+}
+
+
+main article{
+    padding: 15pt;
+}
+
+article .row{
+    display: flex;
+    gap: 0.5rem;
+}
+
+article .column{
+    width: 33%;
+    flex: 25%;
+    gap: 1rem;
+}
+
+article .column img{
+    padding-top: 0.5rem;
+}
+
+.content-design{
+    display: flex;
+    align-items: center;
+    background-color: #FAD500;
+}
+
+.column-design{
+    flex: 50%;
+}
+
+.column-design .image{
+    flex: 50%;
+    background-color: #ffffff;
+}
+
+.button-design{
+    padding-top: 30rem;
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #b9a847;
+    border: #000000;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.button-design:hover{
+    background-color: #94873b;   
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;  
+    padding: 20px;
+    cursor: pointer;
+    width: 30%;
+    /* height: 300px; */
+}
+
+.card:hover{
+    background-color: #f1f1f1;
+}
+
+.responsive-img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+  
+
+/* side content */
+main aside {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+}
+.bottom-bar ul{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 3rem;
+    background-color: #FAD500;
+    margin: auto;
+    gap: 0.3rem 3rem;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bottom-bar li{
+    list-style-type: none;
+}
+
+.bottom-bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.icon-set{
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+
+@media screen and (max-width: 728px) {
+    .navbar a:not(.icon) {
+        display: none;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+@media screen and (max-width:728px) {
+    article .row{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main-navbar{
+        flex-wrap: wrap;
+    }
+
+    .navbar .responsive ul{
+        position: relative;
+    }
+
+    .navbar .responsive .icon{
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+
+    .navbar .responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .content-design{
+        flex-wrap: wrap;
+    }
+
+    .responsive a:hover{
+        background-color: #FAD500;
+        color: #ffffff;
+    }
+
+}
+
+@media screen and (min-width:728px) {
+    .responsive{
+        display: none;
+    }
+
+}
